@@ -12,8 +12,8 @@ import { useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-export default function HomePage() {
-  const [_activeServiceSlide, _setActiveServiceSlide] = useState(0)
+export function LandingPageComponent() {
+  const [activeServiceSlide, setActiveServiceSlide] = useState(0)
   const [activeReview, setActiveReview] = useState(0)
   const [activeDoctorSlide, setActiveDoctorSlide] = useState(0)
   const [showAppointmentDialog, setShowAppointmentDialog] = useState(false)
@@ -281,7 +281,7 @@ export default function HomePage() {
             Врачи
           </Link>
           <Link className="text-base font-medium hover:underline underline-offset-4" href="#about-clinic">
-            О кли��ике
+            О клинике
           </Link>
           <Link className="text-base font-medium hover:underline underline-offset-4" href="#reviews">
             Отзывы
